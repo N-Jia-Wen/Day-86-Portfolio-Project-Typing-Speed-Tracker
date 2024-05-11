@@ -80,6 +80,7 @@ class TypingSpeedTracker:
         self.window.mainloop()
 
     def count_down(self, count: int):
+        self.start_button.config(state="disabled", bg="white")
 
         # When timer first counts down to start:
         if count > 0 and self.counting_down is True:
